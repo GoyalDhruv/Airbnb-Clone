@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary-color: #F5385D;
+}
+
+input[type='email'],
+input[type='password'],
+input[type='text'],
+input[type='number'],
+input[type='tel'],
+textarea {
+    @apply w-full border my-2 py-2 px-3 rounded-2xl;
+}
+
+input:focus-visible {
+    outline: none !important;
+}
+
+button {
+    @apply bg-gray-300
+}
+
+button.primary {
+    background-color: var(--primary-color);
+    @apply w-full p-2 text-white rounded-2xl
+}
+
+.error-border {
+    border: 2px solid red;
+}
+
+.account_page {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    accent-color: var(--primary-color);
+}
+
+
+/* Add this to your main CSS file */
+.carousel-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-dot.carousel__dot--selected {
+    background-color: var(--primary-color);
+}
+
+.bookings_input {
+    border: none !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    border-radius: 0% !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
